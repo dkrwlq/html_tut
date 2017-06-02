@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 연습 16 - 레이아웃 구성연습</title>
+  <style>
+    .header{
+      width: 100%;
+      height: 100px;
+      background: blue;
+    }
+
+    .logo{
+      width: 100px;
+      height: 50px;
+      border: 3px solid #333333;
+    }
+
+    .search{
+      width: 100px;
+      height: 50px;
+      border: 3px solid #333333;
+    }
+
+    .containar{
+      width: 100%;
+      background: #dddddd;
+    }
+
+    .top-wrap{
+      width: 100%;
+    }
+
+    .top-wrap-top{
+      width: 100%;
+    }
+
+    .top-wrap-top:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .top-wrap-top-left{
+      width: 35%;
+      height: 150px;
+      background: mediumaquamarine;
+      float: left;
+    }
+
+    .top-wrap-top-center{
+      width: 35%;
+      height: 150px;
+      background: orange;
+      float: left;
+    }
+
+    .top-wrap-top-right{
+      width: 30%;
+      height: 150px;
+      background: deepskyblue;
+      float: left;
+    }
+
+    .top-wrap-bottom{
+      width: 100%;
+      height: 300px;
+      background: skyblue;
+    }
+
+    .bottom-wrap{
+      width: 100%;
+    }
+
+    .bottom-wrap-top{
+      width: 100%;
+    }
+
+    .bottom-wrap-top:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .bottom-wrap-left{
+      width: 35%;
+      height: 150px;
+      background: yellow;
+      float: left;
+    }
+
+    .bottom-wrap-center{
+      width: 35%;
+      height: 150px;
+      background: orange;
+      float: left;
+    }
+
+    .bottom-wrap-right{
+      width: 30%;
+      height: 150px;
+      background: red;
+      float: left;
+    }
+
+    .bottom-wrap-bottom{
+      width: 100%;
+      height: 300px;
+      background: orange;
+    }
+
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <h1 class="logo">LOGO</h1>
+  <div class="search">search</div>
+</header>
+
+<section class="containar">
+
+<div class="top-wrap">
+
+  <div class="top-wrap-top">
+    <div class="top-wrap-top-left">block left</div>
+    <div class="top-wrap-top-center">block center 10</div>
+    <div class="top-wrap-top-right">block right</div>
+  </div>
+
+  <div class="top-wrap-bottom">module content</div>
+
+</div>
+
+<div class="bottom-wrap">
+
+  <div class="bottom-wrap-top">
+    <div class="bottom-wrap-left">block center-left</div>
+    <div class="bottom-wrap-center">block center 20</div>
+    <div class="bottom-wrap-right">block center-right</div>
+  </div>
+
+  <div class="bottom-wrap-bottom">block center 30</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

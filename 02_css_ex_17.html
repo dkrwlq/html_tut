@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 연습 17 - 레이아웃 구성연습</title>
+  <style>
+    .container{
+      width: 100%;
+    }
+
+    .left{
+      width:50%;
+      background: #dddddd;
+      float: left;
+    }
+
+    .left-wrap-left{
+      width: 80%;
+      background: #dddddd;
+      float: left;
+    }
+
+    .left-wrap-left-top{
+      width: 100%;
+      height: 150px;
+      background: yellow;
+    }
+
+    .left-wrap-left-bottom{
+      width: 100%;
+    }
+
+    .left-wrap-left-bottom-left{
+      width: 20%;
+      height: 300px;
+      background: orange;
+      float: left;
+    }
+
+    .left-wrap-left-bottom-right{
+      width: 80%;
+      float: left;
+    }
+
+    .left-wrap-left-bottom-right-top{
+      width: 100%;
+    }
+
+    .left-wrap-left-bottom-right-top:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .left-wrap-left-bottom-right-top-left{
+      width: 80%;
+      height: 150px;
+      background: skyblue;
+      float: left;
+    }
+
+    .left-wrap-left-bottom-right-top-right{
+      width: 20%;
+      height: 150px;
+      background: deepskyblue;
+      float: left;
+    }
+
+    .left-wrap-left-bottom-right-bottom{
+      width: 100%;
+    }
+
+    .left-wrap-left-bottom-right-bottom:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .left-wrap-left-bottom-right-bottom-left{
+      width: 35%;
+      height: 150px;
+      background: greenyellow;
+      float: left;
+    }
+
+    .left-wrap-left-bottom-right-bottom-center{
+      width: 35%;
+      height: 150px;
+      background: green;
+      float: left;
+    }
+
+    .left-wrap-left-bottom-right-bottom-right{
+      width: 30%;
+      height: 150px;
+      background: blueviolet;
+      float: left;
+    }
+
+    .left-wrap-right{
+      width: 20%;
+    }
+
+
+
+
+    .right{
+      width:50%;
+      background: #dddddd;
+      float: left;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+<section class="container">
+  <div class="left">
+
+    <div class="left-wrap-left">
+
+      <div class="left-wrap-left-top">1</div>
+
+      <div class="left-wrap-left-bottom">
+
+        <div class="left-wrap-left-bottom-left">2</div>
+
+        <div class="left-wrap-left-bottom-right">
+
+          <div class="left-wrap-left-bottom-right-top">
+            <div class="left-wrap-left-bottom-right-top-left">3</div>
+            <div class="left-wrap-left-bottom-right-top-right">4</div>
+          </div>
+
+          <div class="left-wrap-left-bottom-right-bottom">
+            <div class="left-wrap-left-bottom-right-bottom-left">5</div>
+            <div class="left-wrap-left-bottom-right-bottom-center">6</div>
+            <div class="left-wrap-left-bottom-right-bottom-right">7</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="left-wrap-right">
+      <div class="left-wrap-right-top">8</div>
+      <div class="left-wrap-right-bottom">9</div>
+    </div>
+
+    <div class="left-wrap-bottom">
+      <div class="left-wrap-bottom-top">10</div>
+      <div class="left-wrap-bottom-bottom">11</div>
+    </div>
+
+  </div>
+
+
+  <div class="right">
+
+    <div class="right-wrap-left">
+
+      <div class="right-wrap-left-top">
+
+        <div class="right-wrap-left-top-top">12</div>
+
+        <div class="right-wrap-left-top-bottom">
+          <div class="right-wrap-left-top-bottom-left">13</div>
+          <div class="right-wrap-left-top-bottom-right">14</div>
+        </div>
+
+      </div>
+
+      <div class="right-wrap-left-bottom">
+
+        <div class="right-wrap-left-bottom-left">15</div>
+
+        <div class="right-wrap-left-bottom-right">
+          <div class="right-wrap-left-bottom-right-top">16</div>
+          <div class="right-wrap-left-bottom-right-bottom">17</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="right-wrap-right">
+
+      <div class="right-wrap-right-left">
+        <div class="right-wrap-right-left-top">18</div>
+        <div class="right-wrap-right-left-bottom">19</div>
+      </div>
+
+      <div class="right-wrap-right-right">
+
+        <div class="right-wrap-right-right-top">
+          <div class="right-wrap-right-right-top-left">20</div>
+          <div class="right-wrap-right-right-top-right">21</div>
+        </div>
+
+        <div class="right-wrap-right-right-middle">22</div>
+
+        <div class="right-wrap-right-right-bottom">23</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+</section>
+
+</body>
+</html>
