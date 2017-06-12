@@ -42,7 +42,7 @@
     .absolute-center{
       position: absolute;
       top: 10px;
-      left: 50%; /*박스의 왼쪽끝이 부모의 가운데옴, 가운데 오게 하려면 마진을 줘야함*/
+      left: 50%; /*박스의 왼쪽끝이 부모의 가운데옴, 중간이 가운데 오게 하려면 박스 절반만큼 마진을 줘야함*/
       margin-left: -150px;
       background: mediumpurple;
     }
@@ -65,6 +65,40 @@
       top: 50%;
       margin-top: -20px;
       background: orange;
+    }
+
+    /* 2-3 vertical-align css property */
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    .table{
+      border:1px solid tomato;
+    }
+
+    .table td{
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      border-left:1px solid greenyellow;
+      border-right:1px solid greenyellow;
+    }
+
+    /*테입블 셀의 기본성질은 세로가운데 가로 왼쪽이다. 셀의 정렬을 하기위해서는 vertical-align 을 사용*/
+    .vt-align-text{
+      vertical-align: top;
+    }
+
+    .vt-align-box{
+      vertical-align: bottom;
+    }
+
+    .display-cell{
+      width: 200px;
+      display:table-cell;
+      vertical-align: middle;
+      text-align: center;
     }
 
 
@@ -141,6 +175,34 @@
     박스 세로 정렬
   </div>
 </div>
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+
+<!--2-3. vertical-align css property 를 사용하는 방법-->
+<table class="table">
+  <tr>
+    <td class="vt-align-text">
+      텍스트 세로 정렬
+    </td>
+    <td class="vt-align-box">
+      <div class="align-box"> <!--부모의 text-align 을 상속받아 텍스트가 가운데-->
+        박스 세로 정렬
+      </div>
+    </td>
+  </tr>
+</table>
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+
+<div class="wrap-height display-cell"> <!--테이블 셀은 인라인 요소와 비슷 display:table-cell을 해주면 가로가 자식이나, 텍스트를 따라간다.-->
+  텍스트 세로 정렬
+</div>
+
+<div class="wrap-height display-cell">
+  텍스트 세로 정렬<br />
+  텍스트 세로 정렬
+</div>
+
 
 </body>
 </html>
