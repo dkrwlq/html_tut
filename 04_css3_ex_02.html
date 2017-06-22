@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> 배경 CSS3 </title>
+  <style>
+    .box{
+      width:500px;
+      height:300px;
+    }
+
+    .bg1{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f5fc+0,716ad1+33,9fd8ef+72,2ab0ed+100 */
+      background: #e4f5fc; /* Old browsers */
+      background: -moz-linear-gradient(top, #e4f5fc 0%, #716ad1 33%, #9fd8ef 72%, #2ab0ed 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #e4f5fc 0%,#716ad1 33%,#9fd8ef 72%,#2ab0ed 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #e4f5fc 0%,#716ad1 33%,#9fd8ef 72%,#2ab0ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 ); /* IE6-9 */
+    }
+
+    .bg2{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f5fc+0,716ad1+33,9fd8ef+72,2ab0ed+100 */
+      background: #e4f5fc; /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #e4f5fc 0%, #716ad1 33%, #9fd8ef 72%, #2ab0ed 100%); /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, #e4f5fc 0%,#716ad1 33%,#9fd8ef 72%,#2ab0ed 100%); /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, #e4f5fc 0%,#716ad1 33%,#9fd8ef 72%,#2ab0ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+
+    .bg3{
+      background: url(images/6-2.jpg);
+      background-size: contain;
+    }
+
+    .bg4{
+      background: url(images/6-2.jpg);
+      background-size: cover;
+    }
+
+    .bg5{
+      width: 100%;
+      background: url(images/6-2.jpg) center;
+      background-size: cover;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="box bg1">박스1</div>
+
+<div class="box bg2">박스2</div>
+
+<div class="box bg3">박스3</div>
+
+<div class="box bg4">박스4</div>
+
+<div class="box bg5">박스5</div>
+
+</body>
+</html>
