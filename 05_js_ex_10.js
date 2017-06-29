@@ -47,6 +47,7 @@
     var c = 0;
 
     c = a + b;
+    console.log(c);
   }
 
   function text(){
